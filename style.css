@@ -1,0 +1,55 @@
+:root {
+    --bg-overlay: rgba(5, 10, 20, 0.7);      /* camada escura translúcida */
+    --container-bg: rgba(20, 25, 35, 0.85);  /* fundo do container */
+    --accent-color: #7FE3F1;                 /* azul suave (destaque) */
+    --text-color: #F1FAFF;                   /* branco levemente azulado */
+    --btn-bg: #324050;                       /* cinza-azulado para botões */
+    --btn-hover: #7FE3F1;                    /* mesmo do destaque */
+    --btn-text-hover: #1B2735;               /* escuro ao passar o mouse */
+}
+
+body {
+    background: 
+        linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+        url('./thumb-1920-1304291.png') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    background: var(--container-bg);
+    width: 100%;
+    max-width: 400px;
+    padding: 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.wrapper h1 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+}
+
+.btn-custom {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 12px;
+}
+
+.btn-custom:hover {
+    background-color: var(--btn-hover);
+    color: var(--btn-text-hover);
+}
